@@ -26,7 +26,7 @@ const game = () => {
       });
     });
     //Computer Options
-    const computerOptions = ["batu", "kertas", "gunting"];
+    const computerOptions = ["Gunting", "Kertas", "Gunting"];
 
     options.forEach(option => {
       option.addEventListener("click", function() {
@@ -60,40 +60,40 @@ const game = () => {
     const winner = document.querySelector(".winner");
     //Checking for a tie
     if (playerChoice === computerChoice) {
-      winner.textContent = "WIDIHHH SERI CUYY😱😱😱";
+      winner.textContent = "WIDIHHH SERI CUYY😱😱😱😱";
       return;
     }
     //Check for Rock
-    if (playerChoice === "batu") {
-      if (computerChoice === "gunting") {
-        winner.textContent = "YEAYYY KAMU MENANG!😍😍";
+    if (playerChoice === "Batu") {
+      if (computerChoice === "Gunting") {
+        winner.textContent = "YEAYYY KAMU MENANG KAMU KEREN BANGETTT!😍😍";
         pScore++;
         updateScore();
         return;
       } else {
-        winner.textContent = "YAHAHAHAY KAMU KALAH COBA LAGI YAHH GANBATTE!😊😊";
+        winner.textContent = "YAHHH KAMU KALAH COBA LAGI YAHH SEMANGATSS KAMU PASTI BISAA GANBATTE!😊😊";
         cScore++;
         updateScore();
         return;
       }
     }
     //Check for Paper
-    if (playerChoice === "kertas") {
-      if (computerChoice === "gunting") {
-        winner.textContent = "YAHAHAHAY KAMU KALAH COBA LAGI YAHH GANBATTE!😊😊";
+    if (playerChoice === "Kertas") {
+      if (computerChoice === "Gunting") {
+        winner.textContent = "YAHHH KAMU KALAH COBA LAGI YAHH SEMANGATSS KAMU PASTI BISAA!😊😊";
         cScore++;
         updateScore();
         return;
       } else {
-        winner.textContent = "YEAYYY KAMU MENANG!😍😍";
+        winner.textContent = "YEAYYY KAMU MENANG KAMU KEREN BANGETTT!😍😍";
         pScore++;
         updateScore();
         return;
       }
     }
     //Check for Scissors
-    if (playerChoice === "gunting") {
-      if (computerChoice === "batu") {
+    if (playerChoice === "Gunting") {
+      if (computerChoice === "Batu") {
         winner.textContent = "YAHHH KAMU KALAH COBA LAGI YAHH SEMANGATSS KAMU PASTI BISAA!😊😊";
         cScore++;
         updateScore();
