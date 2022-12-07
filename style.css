@@ -239,27 +239,39 @@ div.fadeIn {
 h4 {
 	text-align: center;
 	position: relative;
-	bottom: 50px;
+	bottom: 28px;
 	color: white;
 	font-family: "Helvetica Neue", Helvetica;
 }
 
+.social-links {
+	margin-bottom: 20px;
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+}
+/* 
 .social-links a {
-	display: inline-block;
-	height: 37px;
-	width: 40px;
 	background-color: rgba(255,255,255,0.2);
 	margin:0 10px 10px 0;
-	text-align: center;
-	line-height: 40px;
 	border-radius: 50%;
 	color: #ffffff;
 	transition: all 0.5s ease;
-	position: relative;
-	left: 145px;
-}
+} */
 
-.social-links a:hover {
+/* .social-links a:hover {
 	color: #24262b;
 	background-color: #ffffff;
+} */
+
+.icon {
+	display: flex;
+	align-items: center !important;
+	justify-content: center !important;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
 }
