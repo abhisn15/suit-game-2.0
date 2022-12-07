@@ -19,6 +19,12 @@ section {
 	font-family: sans-serif;
 }
 
+.list {
+	color: rgb(255, 255, 255);
+	font-size: 22px;
+	text-align: center;
+}
+
 .score {
 	color: rgb(224, 224, 224);
 	height: 100px;
@@ -41,6 +47,7 @@ section {
 	position: relative;
 	top: 40px;
 	left: 6px;
+	text-align: center;
 	font-size: 14px;
 	color: rgba(2, 255, 255, 0.908);
 }
@@ -227,4 +234,32 @@ div.fadeIn {
 	100% {
 		transform: translateY(0px);
 	}
+}
+
+h4 {
+	text-align: center;
+	position: relative;
+	bottom: 50px;
+	color: white;
+	font-family: "Helvetica Neue", Helvetica;
+}
+
+.social-links a {
+	display: inline-block;
+	height: 37px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+	position: relative;
+	left: 145px;
+}
+
+.social-links a:hover {
+	color: #24262b;
+	background-color: #ffffff;
 }
