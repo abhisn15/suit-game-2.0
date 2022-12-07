@@ -7,6 +7,8 @@
 html,
 body,
 * {
+	max-width: 100% !important;
+	overflow-x: hidden !important;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -26,18 +28,19 @@ section {
 }
 
 .score h2 {
-	font-size: 20px;
+	font-size: 13px;
 }
 
 .score p {
 	text-align: center;
 	padding: 10px;
-	font-size: 25px;
+	font-size: 15px;
 }
 
 #jam {
 	position: relative;
-	bottom: 23px;
+	top: 40px;
+	left: 6px;
 	font-size: 18px;
 	color: rgba(2, 255, 255, 0.908);
 }
@@ -53,7 +56,8 @@ section {
 }
 
 .intro h1 {
-	font-size: 30px;
+	text-align: center;
+	font-size: 20px;
 	font-weight: bold;
 	font-family: "Helvetica Neue", Helvetica;
 }
@@ -118,7 +122,7 @@ section {
 }
 
 .hands {
-	border: 8px solid rgb(45, 117, 96);
+	border: 12px solid rgb(45, 117, 96);
 	position: cover;
 }
 
@@ -146,17 +150,18 @@ section {
 .computer-hand {
 	position: relative;
 	width: 40%;
+	color: red;
 }
 
 h1 {
 	font-size: 50px;
-	margin: 0 auto;
+	color: aquamarine;
 }
 
 div.fadeOut {
 	opacity: 0;
 	pointer-events: none;
-	padding-top: 300px;
+	padding-top: 200px;
 }
 
 div.fadeIn {
@@ -221,11 +226,5 @@ div.fadeIn {
 	}
 	100% {
 		transform: translateY(0px);
-	}
-}
-
-@media screen and (max-width: 600px), (max-height: 500px) {
-	.score {
-		font-size: 10px;
 	}
 }
