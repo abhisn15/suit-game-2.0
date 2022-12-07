@@ -26,7 +26,7 @@ const game = () => {
       });
     });
     //Computer Options
-    const computerOptions = ["rock", "paper", "scissors"];
+    const computerOptions = ["Gunting", "Kertas", "Gunting"];
 
     options.forEach(option => {
       option.addEventListener("click", function() {
@@ -64,8 +64,8 @@ const game = () => {
       return;
     }
     //Check for Rock
-    if (playerChoice === "rock") {
-      if (computerChoice === "scissors") {
+    if (playerChoice === "Batu") {
+      if (computerChoice === "Gunting") {
         winner.textContent = "YEAYYY KAMU MENANG KAMU KEREN BANGETTT!😍😍";
         pScore++;
         updateScore();
@@ -78,8 +78,8 @@ const game = () => {
       }
     }
     //Check for Paper
-    if (playerChoice === "paper") {
-      if (computerChoice === "scissors") {
+    if (playerChoice === "Kertas") {
+      if (computerChoice === "Gunting") {
         winner.textContent = "YAHHH KAMU KALAH COBA LAGI YAHH SEMANGATSS KAMU PASTI BISAA!😊😊";
         cScore++;
         updateScore();
@@ -92,8 +92,8 @@ const game = () => {
       }
     }
     //Check for Scissors
-    if (playerChoice === "scissors") {
-      if (computerChoice === "rock") {
+    if (playerChoice === "Gunting") {
+      if (computerChoice === "Batu") {
         winner.textContent = "YAHHH KAMU KALAH COBA LAGI YAHH SEMANGATSS KAMU PASTI BISAA!😊😊";
         cScore++;
         updateScore();
