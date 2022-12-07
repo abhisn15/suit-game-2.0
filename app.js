@@ -60,18 +60,18 @@ const game = () => {
     const winner = document.querySelector(".winner");
     //Checking for a tie
     if (playerChoice === computerChoice) {
-      winner.textContent = "WIDIHHH SERI CUYY😱😱😱😱";
+      winner.textContent = "WIDIHHH SERI CUYY😱😱😱";
       return;
     }
     //Check for Rock
     if (playerChoice === "Batu") {
       if (computerChoice === "Gunting") {
-        winner.textContent = "YEAYYY KAMU MENANG KAMU KEREN BANGETTT!😍😍";
+        winner.textContent = "YEAYYY KAMU MENANG!😍😍";
         pScore++;
         updateScore();
         return;
       } else {
-        winner.textContent = "YAHHH KAMU KALAH COBA LAGI YAHH SEMANGATSS KAMU PASTI BISAA GANBATTE!😊😊";
+        winner.textContent = "YAHAHAHAY KAMU KALAH COBA LAGI YAHH GANBATTE!😊😊";
         cScore++;
         updateScore();
         return;
@@ -80,12 +80,12 @@ const game = () => {
     //Check for Paper
     if (playerChoice === "Kertas") {
       if (computerChoice === "Gunting") {
-        winner.textContent = "YAHHH KAMU KALAH COBA LAGI YAHH SEMANGATSS KAMU PASTI BISAA!😊😊";
+        winner.textContent = "YAHAHAHAY KAMU KALAH COBA LAGI YAHH GANBATTE!😊😊";
         cScore++;
         updateScore();
         return;
       } else {
-        winner.textContent = "YEAYYY KAMU MENANG KAMU KEREN BANGETTT!😍😍";
+        winner.textContent = "YEAYYY KAMU MENANG!😍😍";
         pScore++;
         updateScore();
         return;
