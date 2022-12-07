@@ -116,15 +116,15 @@ section {
 	text-align: center;
 }
 
-.rock {
+.batu {
 	margin: 20px;
 }
 
-.paper {
+.kertas {
 	margin: 20px;
 }
 
-.scissors {
+.gunting {
 	margin: 10px;
 }
 
@@ -133,9 +133,9 @@ section {
 	position: cover;
 }
 
-.rock:hover,
-.paper:hover,
-.scissors:hover {
+.batu:hover,
+.kertas:hover,
+.gunting:hover {
 	cursor: pointer;
 	background-color: rgb(212, 135, 222);
 	transition: cubic-bezier(0.215, 0.61, 0.355, 1) ease-in-out;
